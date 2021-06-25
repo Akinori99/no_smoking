@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krishdevdb/reseter.css/css/reseter.min.css">
+  <link rel="stylesheet" href="/scss/styles.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/chat.js"></script>
+  <title>禁煙チャレンジ</title>
+</head>
+<body>
+  <div id="app" class="wrapper">
+    <div>
+      <p>本日の喫煙可能本数は･･･</p>
+      <p class="number">{{ number }}</p>
+      <p>本です！</p>
+    </div>
+    <form>
+      <input id="number" type="number" min="2" max="20" placeholder="数値を入力">
+      <p>※下限2・上限20</p>
+      <button id="btn" class="btn kiran" @click.prevent="random">スタート</button>
+      <p>※数値を入力後、ボタンを押してください。</p>
+      <p>※【入力した値-1】を上限としたランダムな自然数（0を含む）が表示されます。</p>
+    </form>
+  </div>
+  <div id="chat" class="wrapper">
+    <button id="tab" @click="stopChat" title="クリックでチャットの表示・非表示を切り替え">{{ btnText }}</button>
+    <div id="showContent">
+      <img class="showImg" src="/img/chara.png">
+      <div class="showChat fuwa">
+        <p :key="chats[chat]">{{ chats[chat] }}</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
