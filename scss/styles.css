@@ -15,7 +15,7 @@ body {
 .number {
   font-family: 'Libre Baskerville', serif;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 85px;
   margin: 10px;
 }
 
@@ -29,7 +29,7 @@ form {
 }
 form input {
   display: inline-block;
-  width: 80px;
+  width: 90px;
   height: 30px;
   border: 1px solid black;
   background: #F0F0F2;
@@ -47,7 +47,7 @@ form p {
 
 .btn {
   font-weight: bold;
-  padding: 30px 40px;
+  padding: 20px 30px;
   border-radius: 20px;
   background: #01d54b;
   box-shadow: inset 5px -5px 10px #019b37, inset -5px 5px 10px #01ff5f;
