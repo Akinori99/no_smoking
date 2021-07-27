@@ -12,4 +12,4 @@ https://akinori99.github.io/no_smoking/
 
 
 ## 作成日(Day of composition)
-2021/06/26  【更新(Update)：2021/06/29】
+2021/06/26  【更新(Update)：2021/07/27】
